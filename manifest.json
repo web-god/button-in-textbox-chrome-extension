@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Button in TextBox",
+    "version": "1.0",
+    "description": "extension to add button to all text boxes like grammarly",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+
+    "icons":{
+        "16": "book.png",
+        "32": "book.png",
+        "48": "book.png",
+        "128": "book.png"
+    },
+
+    "action":{
+        "default_icon":"book.png"
+  }
+}
